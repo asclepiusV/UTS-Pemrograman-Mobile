@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movie Preview</string>
+    <string name="cover">Cover</string>
+    <string name="title">Title</string>
+    <string name="genre">Genre:</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="trailer">Trailer</string>
+    <string name="synopsis">Synopsis:</string>
+    <string name="genredesc">Genre</string>
+    <string name="yearMovie">1990</string>
+</resources>

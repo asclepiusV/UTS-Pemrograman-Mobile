@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DetailActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/posterMovie"
+        android:src="@drawable/thebatman"
+        android:contentDescription="@string/cover"/>
+
+    <TextView
+        android:id="@+id/titleMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/title"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/genredescMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/genredesc"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/posterMovie"
+                android:layout_toEndOf="@id/posterMovie"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/titleMovie"/>
+            <TextView
+                android:id="@+id/genreMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/genre"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/posterMovie"
+                android:layout_toEndOf="@id/posterMovie"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/titleMovie"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/yeardescMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tahun: "
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_below="@id/genreMovie"/>
+        <TextView
+            android:id="@+id/yearMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yearMovie"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_below="@id/genreMovie"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/synMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/synopsis"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_below="@id/genreMovie"/>
+
+    <TextView
+        android:id="@+id/descMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem_ipsum"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/genreMovie"/>
+
+    <TextView
+        android:id="@+id/trailertitleMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trailer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="20dp"
+        android:layout_below="@id/genreMovie"/>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="410dp"
+        android:layout_height="210dp"
+        android:clickable="true"/>
+
+
+</LinearLayout>
+
+</ScrollView>
